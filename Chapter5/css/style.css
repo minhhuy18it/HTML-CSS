@@ -4,11 +4,45 @@
 	File Name: styles.css
 */
 
+
 /* CSS Reset */
 body, header, nav, main, footer, img, h1 {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 1.25em;
+}
+/*
+#info ul {
+	margin-left: 5%;
+}*/
+
+.map {
+	border: 5px solid #373684;
+}
+
+.map iframe {
+	width: 95%;
+	height: 50%;
+}
+
+.tel-link {
+	background-color: #373684;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
 }
 
 /* Style rule for images */
@@ -35,6 +69,7 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	text-align: center;
+	border-top: 1px solid #fff;
 }
 nav ul li {
 	display: inline-block;
@@ -66,8 +101,8 @@ main p {
 }
 
 #piano, #guitar, #violin {
-	width: 29%;
-	float: left;
+/*	width: 29%;
+	float: left;*/
 	margin: 0 2%;
 }
 #info {
@@ -78,13 +113,10 @@ main p {
 #contact {
 	text-align: center;
 }
-#contact a {
+#contact>a {
 	color: #4645a8;
 	text-decoration: none;
 	font-weight: bold;
-}
-.map {
-	border: 5px solid #373684;
 }
 
 /* Style rules for footer content */
@@ -96,4 +128,8 @@ footer {
 footer a {
 	color: #4645a8;
 	text-decoration: none;
+}
+
+.tab-desk {
+	display: none;
 }
