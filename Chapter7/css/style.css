@@ -126,6 +126,7 @@ main p {
 }
 
 #piano1, #guitar1, #violin1, #sacso1 {
+	width: 22%;
 	float: left;
 	margin: 0 2%;
 	position: relative;
@@ -139,7 +140,7 @@ main p {
 
 #piano1 figcaption,#guitar1 figcaption,#violin1 figcaption,#sacso1 figcaption {
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: bold;
 	color: #373684;
 	text-shadow: 3px 3px 10px #8280cb;
@@ -174,7 +175,7 @@ footer a {
 	/*display: none;*/
 }
 
-@media screen and (min-width: 550px), print {
+@media screen and (min-width: 550px) and (max-width: 1000px), print {
 
 
 	.tab-desk {
@@ -190,7 +191,7 @@ footer a {
 	}
 }
 
-@media screen and (min-width: 200px), print {
+@media screen and (min-width: 200px) and (max-width: 900px), print {
 
 	#piano1 figcaption, #guitar1 figcaption, #violin1 figcaption, #sacso1 figcaption {
 		position: absolute;
@@ -205,10 +206,28 @@ footer a {
 		font-weight: bold;
 	}
 
-	nav ul {
+	#piano1, #guitar1, #violin1, #sacso1 {
+		float: none;
+		margin: 0 2%;
+		margin-left: 40px;
+		margin-top: 10px;
+		position: relative;
+		max-width: 275px;
+		border: 5px solid #373684;
+	}
+
+	nav ul li{
 		width: 100%;
 		text-align: center;
+		border-top: 1px solid #fff;
+	}
+
+	nav ul li a {
 		border-right: none;
+	}
+
+	h1 {
+		font-size: 0.75em;
 	}
 
 }
