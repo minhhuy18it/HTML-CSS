@@ -1,0 +1,351 @@
+/*
+	Author: HuyLe
+	Date: 09/03/2022
+	File Name: styles.css
+*/
+
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #e5e9fc;
+}
+
+li {
+	list-style: none;
+}
+
+main>h2 {
+	text-align: center;
+}
+
+#tbhead {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+button{
+  margin:auto;
+  display:block;
+}
+
+/* BUTTON STYLES */
+button{
+  padding:16px 32px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:100;
+  color:#fff;
+  background: #587286;
+  border:0;
+  font-weight:100;
+}
+button:hover{
+  background: #3B5C76;
+}
+
+
+#tbhead td,#tbhead th {
+  border: 2px solid #8280cb;
+  text-align: left;
+  padding: 8px;
+}
+
+#tbhead tr>th {
+	background-color: #373684;
+	text-align: center;
+	color: #fff;
+	font-size: 1.15em;
+}
+
+#tbhead tr:nth-child(odd) {
+	background-color: #b7b7e1;
+}
+
+h1 {
+	font-size: 1.25em;
+}
+
+
+.map {
+	border: 5px solid #373684;
+}
+
+#head h2{
+	text-align: center;
+	color: #373684;
+}
+
+.map iframe {
+	width: 95%;
+	height: 50%;
+}
+
+.tel-link {
+	background-color: #373684;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+/* Style rule for images */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Style rules for header content */
+header {
+	text-align: center;
+	font-size: 3em;
+	color: #373684;
+}
+header h1 {
+	font-style: italic;
+}
+
+/* Style rules for navigation area */
+nav {
+	background-color: #373684;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+	/*border-top: 1px solid #fff;*/
+}
+
+nav ul li {
+	display: inline-block;
+	font-size: 1.5em;
+}
+
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	/*float: left;*/
+	border-right: 0.5px solid #e5e9fc;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 0.75em;
+	padding-left: 0.75em;
+}
+
+nav ul li a:hover {
+	background-color: #e5e9fc;
+	color: #1b329f;
+}
+
+/* Style rules for main content */
+main {
+	padding: 2%;
+	background-color: #e5e9fc;
+	overflow: auto;
+	font-family: Verdana, Arial, sans-serif;
+}
+main p {
+	font-size: 1.25em;
+}
+.action {
+	font-size: 1.75em;
+	color: #373684;
+	font-weight: bold;
+}
+
+/*#piano, #guitar, #violin {
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+}*/
+
+#piano1, #guitar1, #violin1, #sacso1 {
+	width: 22%;
+	float: left;
+	margin: 0 2%;
+	position: relative;
+	max-width: 275px;
+	border: 5px solid #373684;
+}
+
+#piano1 img,#guitar1 img,#violin1 img,#sacso1 img {
+	box-sizing: border-box;
+}
+
+#piano1 figcaption,#guitar1 figcaption,#violin1 figcaption,#sacso1 figcaption {
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #373684;
+	text-shadow: 3px 3px 10px #8280cb;
+}
+
+#info {
+	clear: left;
+	background-color: #c0caf7;
+	padding: 1% 2%;
+}
+#contact {
+	text-align: center;
+}
+#contact>a {
+	color: #4645a8;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Style rules for footer content */
+footer {
+	text-align: center;
+	font-size: 0.65em;
+	clear: left;
+}
+footer a {
+	color: #4645a8;
+	text-decoration: none;
+}
+
+.tab-desk {
+	/*display: none;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+.main {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.main fieldset, .right fieldset {
+	height: 250px;
+}
+
+.right {
+  float: left;
+  width: 50%;
+  padding: 0px 10px;
+  margin-top: 5px;
+}
+
+.menu1 {
+  float: left;
+  width: 29%;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+.main1 {
+  float: left;
+  width: 29%;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+.right1 {
+  float: left;
+  width: 29%;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+
+
+@media only screen and (max-width:800px) {
+	.main {
+		width: 100%;
+	}
+
+	.right {
+	    width: 100%;
+	}
+
+ 	.main1, .menu1, .right1 {
+    width: 100%;
+    padding: 0;
+    margin-left: 0px;
+	}
+
+	.tab-desk {
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width:500px) {
+  	.main, .right, .menu1, .main1, .right1 {
+    	width: 100%;
+	    margin-left: 0px;
+  	}
+}
+
+@media screen and (min-width: 550px) and (max-width: 1000px), print {
+
+
+	.tab-desk {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	span.tab-desk {
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px), print {
+
+	#piano1 figcaption, #guitar1 figcaption, #violin1 figcaption, #sacso1 figcaption {
+		position: absolute;
+		bottom: 0;
+		background: rgba(55, 54, 132, 0.7);
+		color: #fff;
+		width: 100%;
+		padding: 5% 0;
+		text-align: center;
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	#piano1, #guitar1, #violin1, #sacso1 {
+		float: none;
+		margin: 0 2%;
+		margin-left: 40px;
+		margin-top: 10px;
+		position: relative;
+		max-width: 275px;
+		border: 5px solid #373684;
+	}
+
+	nav ul li{
+		width: 100%;
+		text-align: center;
+		/*border-top: 1px solid #fff;*/
+	}
+
+	nav ul li a {
+		border-right: none;
+	}
+
+	h1 {
+		font-size: 0.75em;
+	}
+
+}
