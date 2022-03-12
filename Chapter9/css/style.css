@@ -248,17 +248,20 @@ footer a {
 
 .menu1 {
   float: left;
-  width: 33%;
+  width: 29%;
+  margin-left: 50px;
+  margin-top: 7px;
 }
 .main1 {
   float: left;
-  width: 33%;
-  padding: 0 10px;
+  width: 29%;
+  margin-left: 50px;
+  margin-top: 7px;
 }
 .right1 {
   float: left;
-  width: 33%;
-  padding: 0px 15px;
+  width: 29%;
+  margin-left: 50px;
   margin-top: 7px;
 }
 
@@ -275,12 +278,14 @@ footer a {
    	.main1, .menu1, .right1 {
 	    width: 100%;
 	    padding: 0;
+	    margin-left: 0px;
   	}
 }
 
 @media only screen and (max-width:500px) {
   	.main, .right, .menu1, .main1, .right1 {
     	width: 100%;
+	    margin-left: 0px;
   	}
 }
 
